@@ -66,7 +66,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% comment %}
 EVENTBRITE
 
-This block includes the Eventbrite registration widget if
+TThis block includes the Eventbrite registration widget if
 'eventbrite' has been set in the header.  You can delete it if you
 are not using Eventbrite, or leave it in, since it will not be
 displayed if the 'eventbrite' field in the header is not set.
@@ -74,17 +74,32 @@ displayed if the 'eventbrite' field in the header is not set.
 {% if page.eventbrite %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
+<div id="eventbrite-widget-container-1305128627859"></div>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '1305128627859',
+        iframeContainerId: 'eventbrite-widget-container-1305128627859',
+
+        // Optional
+        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+    });
+</script>
 {% endif %}
 
 
 <h2 id="general">General Information</h2>
+
+
 
 {% comment %}
 INTRODUCTION
@@ -106,7 +121,7 @@ This is a hands-on introduction to the first steps in deep learning, intended fo
 * machine learning, including data cleaning, train & test splits, type of problems (regression, classification), overfitting & underfitting, metrics (accuracy, recall, etc.)
 * Python programming, including the Pandas package, how to create functions, how to write loops, and experience with conditional logic
 
-**Please take the <a href="https://forms.gle/Hbdfn845z9usGNcr8">pre-workshop survey</a> to verify you meet the prerequisites and to give the instructors a better understanding of learners' backgrounds.**
+**Please take the <a href="[https://forms.gle/Hbdfn845z9usGNcr8](https://docs.google.com/forms/d/e/1FAIpQLSeF8gNNpdCNaTqqw0PEcR02zR3vgIlHDfuanLlc27SozOk7fw/viewform?usp=sharing)">pre-workshop survey</a> to verify you meet the prerequisites and to give the instructors a better understanding of learners' backgrounds.**
 
 The use of deep learning has seen a sharp increase of popularity and applicability over the last decade. While deep learning can be a useful tool for researchers from a wide range of domains, taking the first steps in the world of deep learning can be somewhat intimidating. This introduction aims to cover the basics of deep learning in a practical and hands-on manner, so that upon completion, you will be able to train your first neural network and understand what next steps to take to improve the model.
 
@@ -460,5 +475,5 @@ during the workshop.
 {% elsif site.carpentry == "incubator" %}
 **Please check the "Setup" page of the
 [lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.** Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please visit the Data Science Hub at <a href = "https://datascience.wisc.edu/hub/#dropin">Coding Meetup</a> on Thursdays, 2:30-4:30pm. For appointments outside of Coding Meetup, please email <a href ="mailto:endemann@wisc.edu">endemann@wisc.edu</a>.
+to obtain the software and data you will need to follow the lesson.** Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please visit the Data Science Hub at <a href = "https://datascience.wisc.edu/hub/#dropin">Coding Meetup</a> on Tuesdays and Thursdays, 2:30-4:30pm. For appointments outside of Coding Meetup, please email <a href ="mailto:facilitator@datascience.wisc.edu">facilitator@datascience.wisc.edu</a>.
 {% endif %}
