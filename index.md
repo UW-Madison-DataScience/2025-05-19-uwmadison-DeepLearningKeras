@@ -98,13 +98,21 @@ displayed if the 'eventbrite' field in the header is not set.
 
 
 <h2 id="general">General Information</h2>
-{% comment %}
 INTRODUCTION
 
 Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
+{% if site.carpentry == "swc" %}
+{% include swc/intro.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/intro.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/intro.html %}
+{% endif %}
+
+{% if site.pilot %}
 This is a hands-on introduction to the first steps in deep learning, intended for students and researchers who are familiar with...
 * machine learning, including data cleaning, train & test splits, type of problems (regression, classification), overfitting & underfitting, metrics (accuracy, recall, etc.)
 * Python programming, including the Pandas package, how to create functions, how to write loops, and experience with conditional logic
