@@ -121,7 +121,7 @@ This is a hands-on introduction to the first steps in deep learning, intended fo
 * machine learning, including data cleaning, train & test splits, type of problems (regression, classification), overfitting & underfitting, metrics (accuracy, recall, etc.)
 * Python programming, including the Pandas package, how to create functions, how to write loops, and experience with conditional logic
 
-**Please take the <a href="[https://forms.gle/Hbdfn845z9usGNcr8](https://docs.google.com/forms/d/e/1FAIpQLSeF8gNNpdCNaTqqw0PEcR02zR3vgIlHDfuanLlc27SozOk7fw/viewform?usp=sharing)">pre-workshop survey</a> to verify you meet the prerequisites and to give the instructors a better understanding of learners' backgrounds.**
+**Please take the <a href="[https://docs.google.com/forms/d/e/1FAIpQLSeF8gNNpdCNaTqqw0PEcR02zR3vgIlHDfuanLlc27SozOk7fw/viewform?usp=sharing]">pre-workshop survey</a> to verify you meet the prerequisites and to give the instructors a better understanding of learners' backgrounds.**
 
 The use of deep learning has seen a sharp increase of popularity and applicability over the last decade. While deep learning can be a useful tool for researchers from a wide range of domains, taking the first steps in the world of deep learning can be somewhat intimidating. This introduction aims to cover the basics of deep learning in a practical and hands-on manner, so that upon completion, you will be able to train your first neural network and understand what next steps to take to improve the model.
 
