@@ -460,5 +460,5 @@ during the workshop.
 {% elsif site.carpentry == "incubator" %}
 **Please check the "Setup" page of the
 [lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.** Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please visit the Data Science Hub at <a href = "https://datascience.wisc.edu/hub/#dropin">Coding Meetup</a> on Thursdays, 2:30-4:30pm. For appointments outside of Coding Meetup, please email <a href ="mailto:endemann@wisc.edu">endemann@wisc.edu</a>.
+to obtain the software and data you will need to follow the lesson.** Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please visit the Data Science Hub at <a href = "https://datascience.wisc.edu/hub/#dropin">Coding Meetup</a> on Tuesdays and Thursdays, 2:30-4:30pm. For appointments outside of Coding Meetup, please email <a href ="mailto:endemann@wisc.edu">endemann@wisc.edu</a>.
 {% endif %}
