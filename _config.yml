@@ -60,7 +60,8 @@ title: "Intro to Deep Learning with Keras"
 # in The Carpentries Incubator).
 #
 # For an Incubator workshop, uncomment the line below and add the URL of the lesson site.
-incubator_lesson_site: "https://carpentries-incubator.github.io/deep-learning-intro/"
+incubator_lesson_site: "https://uw-madison-datascience.github.io/deep-learning-intro/"
+
 #
 # For an Incubator workshop, uncomment the line below and add the URL of your pre-workshop survey
 incubator_pre_survey: "https://docs.google.com/forms/d/e/1FAIpQLSeF8gNNpdCNaTqqw0PEcR02zR3vgIlHDfuanLlc27SozOk7fw/viewform?usp=sharing"
